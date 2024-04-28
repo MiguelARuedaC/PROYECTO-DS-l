@@ -1,0 +1,259 @@
+.app {
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #303030;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.app-name {
+    font-size: 1.5rem;
+}
+
+.header-buttons {
+    display: flex;
+    
+}
+
+.header-button {
+    background-color: #dddddd;
+    border: none;
+    color: #303030;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.header-button-container {
+    margin-left: 10px;
+}
+
+.header-button-container:hover .header-button {
+    background-color: #cccccc;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.header-buttons-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-button-small {
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+.header-button-dark {
+    background-color: #303030;
+}
+
+/* Resto de estilos existentes */
+
+.presentation {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.presentation-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.products {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 20%; /* Tamaño normal */
+    max-height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carousel-image.current {
+    width: 30%; /* Tamaño más grande para la imagen activa */
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen activa */
+}
+
+.navigation-buttons {
+    margin-top: 10px;
+}
+
+.navigation-buttons button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #dddddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+    background-color: #cccccc;
+}
+
+/* Boton desplegable */
+.dropbtn {
+    background-color: #303030;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+  /* Contenido del desplegable(escondido por default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Enlaces dentro del desplegable */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+  /* Cambio de color de enlaces en hoover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+  /* Menu desplegable en hoover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.footer {
+    background-color: #303030;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.developer-info {
+    font-size: 0.9rem;
+}
+
+.header-button {
+    /* Otros estilos... */
+    margin-right: 10px; /* Añadir un margen entre los botones */
+    text-decoration: none; 
+}
+
+.header-button:last-child {
+    margin-right: 0; /* Eliminar el margen del último botón para evitar espacios innecesarios */
+}
+.form-container {
+    max-width: 400px; /* Limita el ancho del formulario para que no se extienda demasiado */
+    margin: 0 auto; /* Centra el formulario horizontalmente en la página */
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Sombra suave para efecto de elevación */
+}
+
+.form-container h2 {
+    margin-bottom: 20px; /* Espacio inferior para separar el título del formulario */
+    color: #303030; /* Color de texto oscuro */
+}
+
+.form-field {
+    margin-bottom: 20px; /* Espacio inferior entre los campos */
+}
+
+.form-field label {
+    display: block; /* Para que los labels ocupen una línea completa */
+    margin-bottom: 5px; /* Espacio inferior entre el label y el input */
+    color: #303030; /* Color de texto oscuro */
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="password"] {
+    width: calc(100% - 20px); /* Los inputs ocupan todo el ancho disponible menos el relleno */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #dddddd; /* Borde delgada */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
+
+.form-button {
+    background-color: #303030; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto claro */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.form-button:hover {
+    background-color: #222222; /* Color de fondo ligeramente más oscuro al pasar el ratón */
+}
+
+.form-container p {
+    margin-top: 15px; /* Espacio superior para separar el texto del enlace */
+    color: #303030; /* Color de texto oscuro */
+}
+
+.form-container a {
+    color: #303030; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.form-container a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
+}
+
+.espaciado {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-container-left {
+    max-width: 400px; /* Limita el ancho del formulario para que no se extienda demasiado */
+    margin: 1 auto; /* Centra el formulario horizontalmente en la página */
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Sombra suave para efecto de elevación */
+}
