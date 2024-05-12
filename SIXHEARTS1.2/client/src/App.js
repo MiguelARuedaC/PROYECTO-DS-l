@@ -7,6 +7,46 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
   const [paymentMethod, setPaymentMethod] = useState('');
 
+  const Producto = ({ imagen, descripcion, precio }) => {
+    return (
+      <div className="producto">
+        <img src={imagen} alt="Producto" />
+        <h3>{descripcion}</h3>
+        <p>{precio}</p>
+      </div>
+    );
+  };
+  
+  const ListaProductos = ({ productos }) => {
+    return (
+      <div className="lista-productos">
+        {productos.map((producto, index) => (
+          <Producto
+            key={index}
+            imagen={producto.imagen}
+            descripcion={producto.descripcion}
+            precio={producto.precio}
+          />
+        ))}
+      </div>
+    );
+  };
+
+  const productos = [
+    {
+      imagen: 'imagenes/adidas-Campus-00s-Grey-White-Product.jpg',
+      descripcion: 'Adidas Grey',
+      precio: '$100',
+    },
+    {
+      imagen: 'imagenes/adidas-Campus-00s-Core-Black-Product.jpg',
+      descripcion: 'Adidas core black',
+      precio: '$150',
+    },
+  ];
+  
+  
+
   const carouselImages = [
     'imagenes/adidas-Campus-00s-Core-Black-Product.jpg',
     'imagenes/adidas-Campus-00s-Grey-White-Product.jpg',
@@ -110,11 +150,11 @@ function App() {
                 <button className="form-button" type="submit">Iniciar Sesión</button>
               </form>
               <p>¿No tienes cuenta? <a style={{color: 'blue'}} href="#" onClick={() => handleNavigation('register')}>Crea una aquí</a></p>
-              <a style={{color: 'blue'}}>Olvidé mi contraseña</a>
-              
+              <a style={{color: 'blue'}}>Olvidé mi contraseña</a>   
             </div>
           </div>
         )}
+
         {currentPage === 'register' && (
           <div className="form-container">
             <div>
@@ -178,6 +218,7 @@ function App() {
             )}
           </div>
         )}
+        
         {currentPage === 'pago' && (
           <div className="payment-container">
 
@@ -213,7 +254,26 @@ function App() {
               <p>Has seleccionado pagar con: {paymentMethod}</p>
             )}
           </div>
-        )} 
+        )}
+         
+         {currentPage === 'adidas' && (
+          <div className="adidas-container">
+             <h1>Productos de Calzado</h1>
+      <ListaProductos productos={productos} />
+            </div>)}
+
+         {currentPage === 'nike' && (
+          <div className="nike-container">
+            </div>)}
+
+         {currentPage === 'newbalance' && (
+          <div className="newbalance-container">
+            </div>)}
+
+         {currentPage === 'jordan' && (
+          <div className="jordan-container">
+            </div>)}
+
       </main>
       <footer className="footer">
         <div className="developer-info">
