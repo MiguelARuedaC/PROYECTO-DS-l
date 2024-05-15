@@ -1,0 +1,1 @@
+   DATE       TIME    MULTI   C0%   CKMOD  BAT_mW  TEMP    VID   POWER
