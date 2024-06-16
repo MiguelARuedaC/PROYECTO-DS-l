@@ -1,0 +1,51 @@
+.payment-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.payment-container form {
+    margin-bottom: 20px;
+}
+
+.payment-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #303030;
+}
+
+.payment-container input[type="text"],
+.payment-container input[type="email"],
+.payment-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.payment-container input[type="submit"] {
+    background-color: #303030;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-container input[type="submit"]:hover {
+    background-color: #222222;
+}
+
+.space {
+    margin-bottom: 20px; 
+}
+
+.space-inline {
+    width: 250px; 
+    display: inline-block;
+}

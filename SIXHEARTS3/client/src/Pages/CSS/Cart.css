@@ -1,0 +1,55 @@
+.cart-page {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+    background: linear-gradient(180deg, #4680b7, #e1ffea22 80%);
+}
+
+.cart-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cart-page .product-card {
+    width: 60%; /* Ajusta el ancho según sea necesario */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.cart-page .product-card img {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 100px;
+    object-fit: cover;
+}
+
+.espaciado {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.space {
+    margin-bottom: 20px; 
+}
+
+.right-text {
+    margin-left: 1000px; /* Puedes ajustar este valor según tus necesidades */
+}
+
+.space-inline {
+    width: 250px; 
+    display: inline-block;
+}
+
+.button {
+    background-color: #303030; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto claro */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}

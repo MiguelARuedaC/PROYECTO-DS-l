@@ -1,0 +1,15 @@
+.login{
+    min-height: 100vh;
+    background: linear-gradient(180deg, #4680b7, #e1ffea22 80%);
+    display: block;
+    padding: 20px;
+
+}
+
+.signup{
+    min-height: 100vh;
+    background: linear-gradient(180deg, #4680b7, #e1ffea22 80%);
+    display: block;
+    padding: 20px;
+
+}

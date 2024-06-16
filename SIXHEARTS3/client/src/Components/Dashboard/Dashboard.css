@@ -1,0 +1,13 @@
+.dash-container input[type="submit"] {
+    background-color: #303030;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dash-container input[type="submit"]:hover {
+    background-color: #222222;
+}

@@ -1,0 +1,129 @@
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 1px 3px -2px #303030;
+    background-color: #303030;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo p{
+    color: white;
+    font-size: 38px;
+    font-weight: 400;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu a {
+    color: white; /* Color de texto predeterminado */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambia el color de fondo cuando el mouse está sobre el enlace */
+}
+
+.nav-menu a:visited {
+    color: white; /* Cambia el color del texto para los enlaces visitados */
+}
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+}
+.nav-login-cart button{
+    width: 120px;
+    height: 45px;
+    outline: none;
+    border: 1px solid whitesmoke;
+    border-radius: 75px;
+    color: #303030;
+    font-size: 20px;
+    font-weight: 500px;
+    cursor: pointer; 
+}
+.nav-login-cart button:active{
+    background-color: #ced4da;
+}
+.nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background-color: #ced4da;
+    color: #303030;
+    
+}
+/* Estilos para el contenedor del menú */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+  /* Estilos para la lista desplegable */
+.dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #0d1b2a; /* Color de fondo */
+    border: 1px solid #778da9; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px #415a77; /* Sombra */
+    position: absolute;
+    top: calc(100% + 5px); /* Agrega un espacio entre el elemento y la lista */
+    left: -60px; /* Ajusta la posición hacia la izquierda */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+  /* Estilos para cada elemento de la lista */
+.dropdown ul li {
+    padding: 10px 15px;
+    color: #0d1b2a; /* Color del texto */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+  /* Cambio de color al pasar el mouse */
+.dropdown ul li:hover {
+    background-color: #1b263b;
+}
+
+
